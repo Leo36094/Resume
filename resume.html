@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leo Resume</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <style>
+    /* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
+
+    /* HTML5 display-role reset for older browsers */
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    section {
+      display: block;
+    }
+
+    body {
+      line-height: 1;
+      font-family: Arial, sans-serif;
+    }
+
+    blockquote,
+    q {
+      quotes: none;
+    }
+
+    blockquote:before,
+    blockquote:after,
+    q:before,
+    q:after {
+      content: '';
+      content: none;
+    }
+
+    li {
+      padding: 0 16px;
+      list-style-position: inside;
+      margin-bottom: 3px;
+    }
+
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+
+    .wrapper {
+      padding: 8px;
+      max-width: 990px;
+      margin: auto;
+      font-size: 16px;
+      color: #1a1a1a;
+    }
+
+    .name {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+
+    .divider {
+      margin: 8px 0 16px;
+      border-bottom: 1px solid rgba(128, 110, 110, 0.5);
+    }
+
+    .icon {
+      width: 14px;
+      height: 14px;
+      fill: #403e3e;
+      margin-right: 8px;
+    }
+
+    .info,
+    .info-container {
+      display: flex;
+      align-items: center;
+    }
+    .info-container {
+      margin-right: 10px;
+    }
+    .title {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      padding-bottom: 8px;
+    }
+
+    .project__name {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: baseline;
+    }
+
+    .project__group {
+      font-size: 14px;
+      margin-left: auto;
+      font-weight: 500;
+      width: 160px;
+      font-style: italic;
+    }
+
+    .project__description {
+      margin-bottom: 8px;
+      font-size: 15px;
+      font-weight: 600;
+      color: rgba(#000, 0.8);
+      display: flex;
+      justify-content: space-between;
+      font-weight: bold;
+    }
+
+    .bold {
+      font-weight: 600;
+      color: #000;
+    }
+
+    .tech-list {
+      margin: 15px 0;
+    }
+  </style>
+
+  <body>
+    <div class="wrapper">
+      <h1 class="name">Li-Wei Chuang 莊力維 (Frontend Engineer)</h1>
+      <div class="info">
+        <div class="info-container">
+          <svg class="icon">
+            <use xlink:href="./symbols.svg#icon-envelope" />
+          </svg>
+          <p class="contact">leo36094@gmail.com</p>
+        </div>
+
+        <div class="info-container">
+          <svg class="icon">
+            <use xlink:href="./symbols.svg#icon-phone" />
+          </svg>
+          <p class="contact">(+886)910271180</p>
+        </div>
+      </div>
+      <div class="info">
+        <div class="info-container">
+          <i class="icon fa-solid fa-user"></i>
+          <a href="https://leo36094.github.io/cv/" target="_blank"
+            >https://leo36094.github.io/cv/</a
+          >
+        </div>
+        <div class="info-container">
+          <i class="fa-brands fa-linkedin icon"></i>
+          <a href="https://www.linkedin.com/in/leo-chuang/" target="_blank"
+            >https://www.linkedin.com/in/leo-chuang/</a
+          >
+        </div>
+      </div>
+      <div class="divider"></div>
+
+      <section class="works">
+        <h3 class="title">Work Experience</h3>
+        <div class="project">
+          <h3 class="project__name company">Garena (Sea Limited)</h3>
+          <p class="project__description">
+            Senior Software Engineer I, Frontend
+            <span class="project__group">Jan 2023 - Present</span>
+          </p>
+          <p class="project__description">
+            Software Engineer II, Frontend
+            <span class="project__group">Mar 2020 - Jan 2023</span>
+          </p>
+          <div class="tech-list">
+            <span class="bold">Typescript,</span>
+            <span class="bold">Vue, Nuxt,</span>
+            <span class="bold">Vuex, Pinia,</span>
+            <span class="bold">Webpack,</span>
+            <span class="bold">Cypress,</span>
+            <span class="bold">SCSS,</span>
+            <span class="bold">Sentry.</span>
+          </div>
+          <ul class="project__detail-list_en">
+            <li>
+              Collaborated with backend engineers to develop
+              <span class="bold">over 50+</span> revenue and marketing events.
+            </li>
+            <li>
+              Optimized front-end projects,
+              <span class="bold"
+                >achieving 60% increase in code efficiency and streamlining
+                development process</span
+              >.
+            </li>
+            <li>
+              Guided and mentored junior developers, offering a setup template,
+              code review, and insights into best practices.
+            </li>
+            <li>
+              Revamped project initiation by constructing front-end templates
+              through Cookiecutter, alleviating the burden of configuring
+              settings at project inception. Resulted in a remarkable
+              <span class="bold">16% boost in development efficiency</span>,
+              leading to reduced project delivery times.
+            </li>
+            <li>
+              Developed scalable platforms enabling streamlined configuration of
+              multiple revenue events.
+            </li>
+            <li>
+              Implemented a parser tool of CSS that reduced labor costs between
+              the development team and the operation team, by generating
+              compiled CSS files to readable templates in Google Sheets.
+            </li>
+            <li>
+              Utilized Nuxt.js on official websites for newly launched games to
+              facilitate dynamic meta changes and implement server-side
+              rendering, resulting in improved SEO performance and enhanced user
+              experience.
+            </li>
+          </ul>
+        </div>
+        <div class="divider"></div>
+        <div class="project">
+          <h5 class="project__name">
+            Cloud Interactive
+            <span class="project__group">Oct 2018 - Jan 2020</span>
+          </h5>
+          <p class="project__description">Frontend Engineer</p>
+          <div class="tech-list">
+            <span class="bold">Javascript,</span>
+            <span class="bold">Vue, Nuxt, React</span>
+            <span class="bold">Vuex,</span>
+            <span class="bold">Webpack,</span>
+            <span class="bold">SCSS, Stylus.</span>
+          </div>
+          <ul class="project__detail-list_en">
+            <li>
+              Developed and maintained internal management system for
+              enterprise, resulting in increased efficiency and streamlined
+              processes.
+            </li>
+            <li>
+              Improved efficiency by utilizing <span style="font-weight: bold;">Agile principles</span> and Story points
+              to plan and estimate development schedule.
+            </li>
+            <li>
+              Communicated and integrated with other departments to improve the
+              project such as UX flow with UI/UX designers and RESTful API with
+              backend developers.
+            </li>
+          </ul>
+        </div>
+        <div class="divider"></div>
+        <div class="project">
+          <h5 class="project__name">
+            Acaia<span class="project__group">Mar 2017 - Jun 2018</span>
+          </h5>
+          <p class="project__description">Sales Support Specialist</p>
+        </div>
+        <div class="divider"></div>
+      </section>
+      <section>
+        <h3 class="title">Skill</h3>
+        <div class="project">
+          <h5 class="project__description" style="justify-content: flex-start">
+            Techniques:
+            <div
+              style="display: inline-block; margin-left: 5px; font-weight: 400"
+            >
+              <span style="font-size: 16px">Web Development, </span>
+              <span style="font-size: 16px">Agile Methodologies, </span>
+              <span style="font-size: 16px">Responsive Web Design</span>
+            </div>
+          </h5>
+          <h5 class="project__description" style="justify-content: flex-start; flex-wrap: wrap;">
+            Tools & Software:
+            <div
+              style="display: inline-block; margin-left: 5px; font-weight: 400"
+            >
+              <span style="font-size: 16px">HTML, CSS, </span>
+              <span style="font-size: 16px"
+                >JavaScript(React.js, Vue.js), TypeScript,
+              </span>
+              <span style="font-size: 16px">Python, Flutter, </span>
+              <span style="font-size: 16px">Git, Webpack, Vite, </span>
+              <span style="font-size: 16px">Cypress</span>
+            </div>
+          </h5>
+        </div>
+      </section>
+      <div class="divider"></div>
+      <section class="academic">
+        <h3 class="title">Education</h3>
+        <div class="project">
+          <h5 class="project__name">
+            Ming Chuan University
+            <span class="project__group"> Sep 2011 - June 2015</span>
+          </h5>
+          <p class="project__description">Bachelor's degree, Applied English</p>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
